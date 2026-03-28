@@ -20,6 +20,7 @@ const items = [
   { title: "Oman Strategy", url: "/strategy", icon: Flag },
   { title: "Research", url: "/research", icon: Search },
   { title: "Resolution Builder", url: "/resolution", icon: FileText },
+  { title: "AI Advisor", url: "/ai", icon: Bot },
 ];
 
 export function AppSidebar() {
