@@ -1,4 +1,4 @@
-import { BookOpen, Flag, Globe, Scroll, Search, FileText, Gavel } from "lucide-react";
+import { BookOpen, Flag, Globe, Scroll, Search, FileText, Gavel, Bot } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import { useLocation } from "react-router-dom";
 import {
@@ -20,6 +20,7 @@ const items = [
   { title: "Oman Strategy", url: "/strategy", icon: Flag },
   { title: "Research", url: "/research", icon: Search },
   { title: "Resolution Builder", url: "/resolution", icon: FileText },
+  { title: "AI Advisor", url: "/ai", icon: Bot },
 ];
 
 export function AppSidebar() {
