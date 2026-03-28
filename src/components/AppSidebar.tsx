@@ -1,4 +1,4 @@
-import { BookOpen, Flag, Globe, Scroll, Search, FileText, Gavel } from "lucide-react";
+import { BookOpen, Flag, Globe, Scroll, Search, FileText, Gavel, Bot } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import { useLocation } from "react-router-dom";
 import {
