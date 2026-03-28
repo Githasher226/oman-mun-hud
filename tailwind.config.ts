@@ -12,8 +12,11 @@ export default {
         "2xl": "1400px",
       },
     },
-    extend: {
-      colors: {
+      fontFamily: {
+        display: ['Space Grotesk', 'system-ui', 'sans-serif'],
+        body: ['Inter', 'system-ui', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace'],
+      },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
