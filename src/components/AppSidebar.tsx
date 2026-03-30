@@ -1,4 +1,4 @@
-import { BookOpen, Flag, Globe, Scroll, Search, FileText, Gavel, Bot } from "lucide-react";
+import { BookOpen, Flag, Globe, Scroll, Search, FileText, Gavel, Bot, BookA, ClipboardList } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import { useLocation } from "react-router-dom";
 import {
@@ -15,10 +15,12 @@ import {
 
 const items = [
   { title: "Procedures", url: "/", icon: Gavel },
+  { title: "Key Terms", url: "/key-terms", icon: BookA },
+  { title: "Oman Position", url: "/strategy", icon: Flag },
+  { title: "Country Fact Sheets", url: "/fact-sheets", icon: ClipboardList },
+  { title: "All Countries", url: "/countries", icon: Globe },
   { title: "Topics", url: "/topics", icon: BookOpen },
-  { title: "Countries", url: "/countries", icon: Globe },
-  { title: "Oman Strategy", url: "/strategy", icon: Flag },
-  { title: "Research", url: "/research", icon: Search },
+  { title: "Research & Sources", url: "/research", icon: Search },
   { title: "Resolution Builder", url: "/resolution", icon: FileText },
   { title: "AI Advisor", url: "/ai", icon: Bot },
 ];
