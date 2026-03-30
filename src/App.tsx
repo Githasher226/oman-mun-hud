@@ -11,6 +11,8 @@ import CountriesPage from "@/pages/CountriesPage";
 import StrategyPage from "@/pages/StrategyPage";
 import ResearchPage from "@/pages/ResearchPage";
 import ResolutionPage from "@/pages/ResolutionPage";
+import KeyTermsPage from "@/pages/KeyTermsPage";
+import CountryFactSheetsPage from "@/pages/CountryFactSheetsPage";
 import NotFound from "@/pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,9 +26,11 @@ const App = () => (
         <DashboardLayout>
           <Routes>
             <Route path="/" element={<ProceduresPage />} />
+            <Route path="/key-terms" element={<KeyTermsPage />} />
             <Route path="/topics" element={<TopicsPage />} />
             <Route path="/countries" element={<CountriesPage />} />
             <Route path="/strategy" element={<StrategyPage />} />
+            <Route path="/fact-sheets" element={<CountryFactSheetsPage />} />
             <Route path="/research" element={<ResearchPage />} />
             <Route path="/resolution" element={<ResolutionPage />} />
             <Route path="/ai" element={<AIAdvisorPage />} />
