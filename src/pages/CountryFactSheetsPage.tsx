@@ -18,6 +18,7 @@ import {
   BookOpen,
 } from "lucide-react";
 import { countryFactSheets, type CountryFactSheet } from "@/data/omanResearch";
+import { weogFactSheets } from "@/data/weogFactSheets";
 
 const categoryColors: Record<string, string> = {
   ally: "bg-green-900/40 text-green-300 border-green-700/50",
@@ -173,7 +174,8 @@ export default function CountryFactSheetsPage() {
   const [filter, setFilter] = useState("");
   const [categoryFilter, setCategoryFilter] = useState<string>("all");
 
-  const filtered = countryFactSheets.filter((c) => {
+  const allSheets = [...countryFactSheets, ...weogFactSheets];
+  const filtered = allSheets.filter((c) => {
     const matchesText =
       c.name.toLowerCase().includes(filter.toLowerCase()) ||
       c.overview.toLowerCase().includes(filter.toLowerCase());
