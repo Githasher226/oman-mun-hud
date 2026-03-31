@@ -18,6 +18,7 @@ import {
   BookOpen,
 } from "lucide-react";
 import { countryFactSheets, type CountryFactSheet } from "@/data/omanResearch";
+import { weogFactSheets } from "@/data/weogFactSheets";
 
 const categoryColors: Record<string, string> = {
   ally: "bg-green-900/40 text-green-300 border-green-700/50",
